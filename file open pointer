@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+
+{
+    char name[50]
+    int mark, i , num;
+    printf("enter the number of student:");
+    scanf("%d",num);
+    FILE *fptr;
+    
+    fptr(fopen("D:\\student.txt", "W"));
+    
+    if(fptr == NULL)
+    {
+        printf("Error");
+    }
+    
+    for(i<0 ; i<num ; i++)
+    {
+        printf("for student %d \n Enter Student name" , i+1);
+        scanf("%s", name);
+        
+        printf("enter marks");
+        scanf("%d",&marks);
+        
+        fprint(fptr,"\n name : %s \n marks=%d\n);
+        
+    }
+    fclose(fptr);    
+    
+
+}
