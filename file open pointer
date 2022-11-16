@@ -2,13 +2,14 @@
 int main()
 
 {
-    char name[50]
-    int mark, i , num;
+    char name[50];
+    int marks, i , num;
     printf("enter the number of student:");
-    scanf("%d",num);
+    scanf("%d",&num);
+    
     FILE *fptr;
     
-    fptr(fopen("D:\\student.txt", "W"));
+    fptr=fopen("D:\\student.txt", "W");
     
     if(fptr == NULL)
     {
@@ -23,8 +24,7 @@ int main()
         printf("enter marks");
         scanf("%d",&marks);
         
-        fprint(fptr,"\n name : %s \n marks=%d\n);
-        
+        fprintf(fptr,"\n name : %s \n marks=%d\n ",name,marks);
     }
     fclose(fptr);    
     
